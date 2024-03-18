@@ -1,0 +1,140 @@
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20rem;
+
+  @include tablet {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    justify-content: space-around;
+    background: var(--c-before-accent);
+  }
+
+  &__logo {
+    width: 150rem;
+    height: 83rem;
+  }
+
+  &__backdrop {
+    background: rgba(0, 0, 0, 0.674);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 11;
+    transform: translateX(-120%);
+    display: none;
+    transition: var(--transition);
+    opacity: 0;
+
+    @include desktop-small {
+      display: block;
+    }
+
+    &._active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    @include desktop-small {
+      gap: 100rem;
+    }
+  }
+
+  &__ul {
+    display: flex;
+    align-items: center;
+    gap: 80rem;
+    margin-right: 80rem;
+
+    @include desktop-small {
+      z-index: 9999;
+      position: fixed;
+      width: 70%;
+      height: 100%;
+      flex-direction: column;
+      left: 0;
+      top: 0;
+      background: var(--c-primary);
+      align-items: center;
+      justify-content: center;
+      transform: translateX(-120%);
+      transition: var(--transition);
+      gap: 150rem;
+    }
+
+    &._active {
+      transform: translateX(0);
+    }
+
+    .icon-close {
+      position: absolute;
+      top: 40rem;
+      right: 40rem;
+      color: var(--c-text-white);
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 34rem;
+  }
+
+  &__a {
+    color: var(--c-text-head);
+    font-size: 22rem;
+    font-weight: 400;
+    letter-spacing: 0.44rem;
+
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--c-brand);
+    }
+
+    @include desktop-small {
+      font-size: 35rem;
+      font-weight: 500;
+      color: var(--c-text-white);
+    }
+  }
+}
+
+.icon-menu,
+.icon-close {
+  cursor: pointer;
+  display: none;
+  transition: opacity 0.6s;
+  font-size: 70rem;
+  font-weight: 600;
+
+  @include desktop-small {
+    display: inline-block;
+  }
+}
+
+.icon-menu {
+  &._active {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+.icon-menu {
+  padding-right: 25rem;
+}
+.no-scroll {
+  overflow: hidden;
+}

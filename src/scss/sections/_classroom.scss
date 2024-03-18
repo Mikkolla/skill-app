@@ -1,0 +1,132 @@
+.section-classroom {
+  display: flex;
+  margin-inline: auto;
+  gap: 76rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 160rem;
+  margin-top: 160rem;
+
+  @include desktop {
+    flex-direction: column;
+    max-width: 1000rem;
+    margin-inline: auto;
+  }
+
+  @include tablet {
+    max-width: 700rem;
+    margin-bottom: 20rem;
+  }
+  
+  &__title {
+    color: var(--c-primary);
+    font-family: var(--ff);
+    font-size: 36rem;
+    font-weight: 500;
+    line-height: 160%;
+    margin-bottom: 30rem;
+    position: relative;
+
+    &::before {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      width: 73rem;
+      height: 73rem;
+      border-radius: 50%;
+      background-color: var(--c-before-accent);
+      left: 50%;
+      transform: translateX(-50%);
+      top: -12rem;
+      left: 14rem;
+    }
+  }
+
+  &__span {
+    color: var(--c-accent);
+    font-family: var(--ff);
+    font-size: 36rem;
+    font-weight: 500;
+    line-height: 160%;
+  }
+
+  &__desc {
+    color: var(--c-text-primary);
+    font-family: var(--ff);
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 180%;
+    letter-spacing: 0.48rem;
+    margin-bottom: 30rem;
+    position: relative;
+
+    &::before {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      width: 30rem;
+      height: 30rem;
+      border-radius: 50%;
+      background-color: var(--c-before-accent);
+      top: 50%;
+      transform: translateY(-50%);
+      right: -25rem;
+      top: 100rem;
+    }
+  }
+
+  &__a {
+    color: var(--c-text-primary);
+    font-family: var(--ff);
+    font-size: 22rem;
+    font-weight: 400;
+    line-height: 180%;
+    text-decoration-line: underline;
+  }
+
+  &__img {
+    position: relative;
+    border-radius: 20rem;
+    object-fit: cover;
+  }
+  &__avatar {
+    min-width: 705rem;
+  }
+
+  &__border {
+    position: relative;
+  }
+
+  &__border-bg {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 138rem;
+      height: 138rem;
+      border-radius: 20rem;
+      background: var(--c-after-brand);
+      top: 50%;
+      transform: translateY(-50%);
+      top: 50rem;
+      left: -20rem;
+      @include tablet {
+        display: none;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 231rem;
+      height: 231rem;
+      border-radius: 20rem;
+      background: var(--c-after-accent);
+      top: 50%;
+      transform: translateY(-50%);
+      top: 380rem;
+      left: 495rem;
+    }
+    @include tablet {
+      display: none;
+    }
+  }
+}

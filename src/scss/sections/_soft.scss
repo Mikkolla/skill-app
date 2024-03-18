@@ -1,0 +1,101 @@
+.section-soft {
+  margin-top: 116rem;
+  display: grid;
+  justify-content: center;
+  &__title {
+    text-align: center;
+    color: var(--c-accent);
+    font-family: var(--ff);
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 180%;
+    span {
+      color: var(--c-primary);
+    }
+  }
+
+  &__desc {
+    max-width: 837rem;
+    margin: 0 auto;
+    color: var(--c-text-primary);
+    text-align: center;
+    font-family: var(--ff);
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 180%;
+    margin-bottom: 163rem;
+  }
+
+  &__info {
+    display: flex;
+    gap: 60rem;
+
+    @include desktop-small {
+      display: grid;
+      justify-content: center;
+    }
+  }
+}
+
+.info {
+  &__online,
+  &__ease,
+  &__customer {
+    max-width: 450rem;
+    border-radius: 20px;
+    background: var(--c-text-white);
+    box-shadow: 0rem 10rem 60rem 0rem rgba(38, 45, 118, 0.08);
+    padding-left: 50rem;
+    padding-right: 50rem;
+    padding-bottom: 50rem;
+  }
+
+  &__online-image,
+  &__ease-image,
+  &__customer-image {
+    width: 120rem;
+    height: 100rem;
+    margin: 0 auto;
+    position: relative;
+    top: -55rem;
+    object-fit: cover;
+  }
+
+  &__online-title,
+  &__ease-title,
+  &__customer-title {
+    color: var(--c-primary);
+    text-align: center;
+    font-family: var(--ff);
+    font-size: 30rem;
+    font-weight: 500;
+    margin-bottom: 24rem;
+  }
+
+  &__online-text,
+  &__ease-text,
+  &__customer-text {
+    color: var(--c-text-primary);
+    text-align: center;
+    font-family: var(--ff);
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 180%;
+  }
+
+  &__ease {
+    padding-left: 36rem;
+    padding-right: 36rem;
+  }
+
+  &__customer {
+    padding-left: 66rem;
+    padding-right: 66rem;
+  }
+  &__customer-image {
+    margin-bottom: 55rem;
+  }
+  &__customer-title {
+    margin-bottom: 42rem;
+  }
+}

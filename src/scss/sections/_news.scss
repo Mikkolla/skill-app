@@ -1,0 +1,139 @@
+.news {
+  margin-bottom: 237rem;
+
+  @include tablet {
+    margin-top: 0rem;
+    margin-bottom: 170rem;
+  }
+
+  &__title {
+    color: var(--c-primary);
+    text-align: center;
+    font-family: var(--ff-second);
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 180%;
+    margin-bottom: 20rem;
+  }
+
+  &__desc {
+    color: var(--c-text-primary);
+    text-align: center;
+    font-family: var(--ff-second);
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 180%;
+    margin-bottom: 100rem;
+  }
+
+  &__info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    gap: 120rem;
+
+    @include desktop-small {
+      display: grid;
+      justify-content: center;
+    }
+  }
+
+  &__main-news {
+    max-width: 640rem;
+
+    @include desktop-small {
+      margin-inline: auto;
+    }
+  }
+
+  &__img {
+    border-radius: 20px;
+  }
+
+  &__title-icon {
+    max-width: 130rem;
+    padding: 2rem 35rem;
+    border-radius: 80px;
+    color: var(--c-text-head);
+    background: var(--c-icon-news-bg);
+    font-family: var(--ff);
+    font-size: 20rem;
+    font-weight: 500;
+    line-height: 180%;
+    letter-spacing: 0.4rem;
+    margin-top: 40rem;
+    margin-bottom: 20rem;
+  }
+
+  &__box {
+    max-width: 800rem;
+    display: grid;
+    gap: 50rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 40rem;
+  }
+}
+
+.main-news {
+  &__title {
+    color: var(--c-text-head);
+    font-family: var(--ff);
+    font-size: 26rem;
+    font-weight: 500;
+    line-height: 180%;
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+  }
+
+  &__decs {
+    color: var(--c-text-primary);
+    font-family: var(--ff);
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 180%;
+    letter-spacing: 0.4rem;
+    margin-bottom: 28rem;
+  }
+
+  &__more {
+    color: var(--c-text-primary);
+    font-family: var(--ff);
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 180%;
+    letter-spacing: 0.4rem;
+    text-decoration-line: underline;
+  }
+}
+
+.item {
+  &__img {
+    border-radius: 20px;
+    width: 280rem;
+    height: 200rem;
+  }
+
+  &__title {
+    max-width: 480rem;
+    color: var(--c-text-head);
+    font-family: var(--ff);
+    font-size: 22rem;
+    font-weight: 500;
+    line-height: 180%;
+    margin-bottom: 20rem;
+  }
+
+  &__decs {
+    color: var(--c-text-primary);
+    font-family: var(--ff);
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 180%;
+    letter-spacing: 0.4rem;
+  }
+}

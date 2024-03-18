@@ -1,0 +1,234 @@
+.footer {
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  background: var(--c-text-head);
+  padding: 20rem;
+
+  &__head {
+    padding-top: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    color: var(--c-white);
+    font-family: var(--ff);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.88px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-left: 41px;
+    max-width: 200px;
+
+    @include tablet {
+      font-size: 18px;
+    }
+
+    &._line-title {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 83px;
+        background: var(--c-line-foot);
+      }
+    }
+  }
+
+  &__logo {
+    padding-right: 41px;
+    max-width: 150px;
+    max-height: 83px;
+  }
+
+  &__desc {
+    margin-top: 95rem;
+    color: var(--c-text-footer);
+    font-family: var(--ff);
+    font-size: 26rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.04rem;
+    margin-bottom: 20px;
+    text-align: center;
+
+    @include tablet {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    gap: 20rem;
+    align-items: center;
+
+    @include tablet {
+      display: grid;
+      gap: 45px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__input {
+    font-size: 20rem;
+    max-width: 400rem;
+    border-radius: 80px;
+    background: transparent;
+    color: var(--c-white);
+    padding: 15rem 258rem 15rem 30rem;
+    outline: none;
+    border: 0;
+  }
+  &__form {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 80px;
+
+    border: 1px solid var(--c-border-input);
+
+    ::placeholder {
+      color: var(--c-border-input);
+      text-align: center;
+      font-family: Poppins;
+      font-size: 20rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.8px;
+      text-align: left;
+    }
+  }
+  &__btn-a {
+    @include tablet {
+      margin-inline: auto;
+    }
+  }
+
+  &__btn {
+    border-radius: 60px;
+    background: linear-gradient(106deg, #545ae7 19.57%, #393fcf 78.85%);
+    color: var(--c-white);
+    font-family: var(--ff);
+    font-size: 22rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 14px 34px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: var(--transition);
+
+    @include tablet {
+      text-align: center;
+    }
+
+    &:hover {
+      background: transparent;
+      border: 1px solid #545ae7;
+    }
+  }
+
+  &__info {
+    text-align: center;
+  }
+
+  &__ul {
+    margin-top: 96rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    @include tablet {
+      display: grid;
+      gap: 45px;
+      margin-left: 0;
+    }
+  }
+
+  &__a {
+    color: var(--c-text-footer);
+    text-align: center;
+    font-family: var(--ff);
+    font-size: 22rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.88rem;
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--c-after-brand);
+    }
+
+    &:first-child {
+      padding-right: 20px;
+
+      @include tablet {
+        padding-right: 0;
+      }
+    }
+
+    &._line {
+      position: relative;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      @include tablet {
+        padding-right: 0;
+        padding-left: 0;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 17px;
+        background: var(--c-line-foot);
+
+        @include tablet {
+          display: none;
+        }
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 17px;
+        background: var(--c-line-foot);
+        @include tablet {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__copyright {
+    margin-top: 20rem;
+    color: var(--c-text-footer);
+    text-align: center;
+    font-family: var(--ff);
+    font-size: 22rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 40rem;
+
+    @include tablet {
+      margin-top: 40px;
+    }
+  }
+}

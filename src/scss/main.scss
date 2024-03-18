@@ -1,0 +1,28 @@
+// vendors
+@import "vendors/reset";
+
+// utils
+@import "utils/vars";
+@import "utils/animations";
+@import "utils/mixins";
+
+// layout
+@import "layout/base";
+@import "layout/scroll";
+@import "layout/grid";
+
+// components
+@import "components/header";
+@import "components/footer";
+
+// & UI
+@import "components/UI/btn";
+
+// sections
+@import "sections/welcome";
+@import "sections/soft";
+@import "sections/skilline";
+@import "sections/classroom";
+@import "sections/futures";
+@import "sections/say";
+@import "sections/news";

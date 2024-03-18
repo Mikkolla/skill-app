@@ -1,0 +1,38 @@
+// breakpoints
+$desktop: 1600px;
+
+$desktop-small: 1200px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;
+
+:root {
+  --ff: "Poppins", sans-serif;
+  --ff-second: "Nunito Sans", sans-serif;
+
+  --transition: 0.3s all ease-in-out;
+
+  --c-primary: #2f327d;
+  --c-accent: #f48c06;
+  --c-brand: #65daff;
+  --c-before-accent: #f4b767;
+  --c-after-brand: #23bdee;
+  --c-after-accent: #f3ac50;
+  --c-text-white: #fff;
+  --c-welcome-bg: #fff2e1;
+  --c-border-input: #83839a;
+  --c-line-foot: #626381;
+  --c-icon-news-bg: #f4c467;
+  --c-text-head: #252641;
+  --c-text-add: #464646;
+  --c-text-primary: #696984;
+  --c-text-footer: #b2b3cf;
+  --c-border-item: #f67766;
+  --c-text-item: #5f5f7e;
+  --c-text-mark: #80819a;
+  --c-text-say: #525596;
+  --c-bg-btn: #f48d0666;
+
+  --c-white: #fff;
+  --c-btn-sec: #6c6c6c;
+}
