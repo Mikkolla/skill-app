@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/skill-app/static/css/main.0f0fcf9f.css",
+    "main.js": "/skill-app/static/js/main.5c655654.js",
+    "static/js/453.ed3810f9.chunk.js": "/skill-app/static/js/453.ed3810f9.chunk.js",
+    "static/media/discussion.svg": "/skill-app/static/media/discussion.9ba298a33e01065734f8585c1744b997.svg",
+    "static/media/welcome.svg": "/skill-app/static/media/welcome.540ab962f4b1030c23918bd68945d325.svg",
+    "static/media/management.svg": "/skill-app/static/media/management.09b21627c56d96b8e15f158b5274d8d9.svg",
+    "static/media/quizzes.svg": "/skill-app/static/media/quizzes.0107cf7424a5949ee792696bc24e3cab.svg",
+    "static/media/tools.svg": "/skill-app/static/media/tools.b8383a89b455db3589e7a8aa12ee607b.svg",
+    "static/media/student.png": "/skill-app/static/media/student.cdc05b7bc0096c57ade4.png",
+    "static/media/classrom-bg.png": "/skill-app/static/media/classrom-bg.1fa069673bd4938cdcb7.png",
+    "static/media/team.png": "/skill-app/static/media/team.5e472267c0fe4fb98095.png",
+    "static/media/girl.png": "/skill-app/static/media/girl.a4f462a4a4c30f0f19c0.png",
+    "static/media/friendly.jpg": "/skill-app/static/media/friendly.7a35a2353c9aa1efe627.jpg",
+    "static/media/technologies.jpg": "/skill-app/static/media/technologies.585a8c2aca4bb71df99b.jpg",
+    "static/media/investors.jpg": "/skill-app/static/media/investors.6f05d8c025490a7ef6fa.jpg",
+    "static/media/blackboard.jpg": "/skill-app/static/media/blackboard.82000e2097f2af7905e2.jpg",
+    "static/media/footer-logo.svg": "/skill-app/static/media/footer-logo.d3c4b8c0acaf78f58cef1e28bad87c06.svg",
+    "static/media/logo.svg": "/skill-app/static/media/logo.edb93c3a14e46154f3c0fb197d17f4f7.svg",
+    "static/media/star.svg": "/skill-app/static/media/star.03c737fe442ac3b73e61b9b2d57c6d3c.svg",
+    "static/media/arrow.svg": "/skill-app/static/media/arrow.c187d7588a7f633c05fd11055bd7dc91.svg",
+    "index.html": "/skill-app/index.html",
+    "static/media/wawe.svg": "/skill-app/static/media/wawe.2d0a11abb41a09d5dcdf9bf400d16944.svg",
+    "static/media/play.svg": "/skill-app/static/media/play.f4353e966abf5cc4a118978ad6b26c12.svg",
+    "static/media/line.svg": "/skill-app/static/media/line.0a56490b3ac0cf59d40f93ee835931d6.svg",
+    "main.0f0fcf9f.css.map": "/skill-app/static/css/main.0f0fcf9f.css.map",
+    "main.5c655654.js.map": "/skill-app/static/js/main.5c655654.js.map",
+    "453.ed3810f9.chunk.js.map": "/skill-app/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f0fcf9f.css",
+    "static/js/main.5c655654.js"
+  ]
+}
